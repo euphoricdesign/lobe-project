@@ -1,0 +1,176 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+nav {
+    background: white;
+    margin: 0 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    position: fixed;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    position: relative;
+    bottom: 550px;
+}
+
+.show-menu {
+    position: relative;
+    bottom: 0px;
+}
+
+.nav-links ul, .show-menu ul {
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    list-style: none;
+    background: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links ul li, .show-menu ul li {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #767676;
+    margin-left: 30px;
+}
+
+.nav-hr {
+    position: relative;
+    left: -32px;
+}
+
+.linkLogo {
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.h1Logo {
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #333;
+    margin-right: 3px;
+}
+
+
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 48px 0 10px 0;
+    color: #333;
+}
+
+span {
+    color: #04ddb2;
+}
+
+.titleAndDesk {
+    padding: 0 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+}
+
+.video-screen {
+    width: 300px;
+    border-radius: 20px;
+}
+
+
+.button {
+    /* margin: 40px 0; */
+    height: 45px;
+    background: #04ddb2;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+
+.foot-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+
+.title-foot-section {
+    font-weight: 700;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background: #04ddb2;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 25px;
+}
+
+.spacing {
+    margin-bottom: 12px;
+}
+
+
+@media (min-width: 650px) {
+    .title {
+        font-size: 55px;
+        padding: 0 48px;
+    }
+
+    .desc {
+        font-size: 24px;
+        padding: 0 30px;
+    }
+
+    .video-screen {
+        width: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .video-screen {
+        width: 600px;
+    }
+
+    .title {
+        padding: 0 122px;
+    }
+}
