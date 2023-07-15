@@ -1,6 +1,6 @@
 
-export const Button = ({name, width,marginTop,marginBottom}) => {
+export const Button = ({name, width, marginTop, marginBottom, fontSize, marginRight}) => {
   return (
-    <button style={{width: width, alignSelf: 'center', marginTop: marginTop, marginBottom: marginBottom}} className='btn button'>{name}</button>
+    <button style={{width: width, alignSelf: 'center', marginTop: marginTop, marginBottom: marginBottom, fontSize: fontSize, marginRight: marginRight}} className='btn button'>{name}</button>
   )
 }

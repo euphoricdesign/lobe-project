@@ -3,33 +3,31 @@ body {
 }
 
 
+
+
+
 nav {
-    background: white;
-    margin: 0 30px;
+    background-color: hsla(0,0%,100%,.8);
+    background: hsla(0,0%,100%,.88);
+    backdrop-filter: blur(12px);
+    
     padding-top: 25px;
-    padding-bottom: 15px;
     position: fixed;
-    width: calc(100% - 60px);
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .nav-links {
-    position: relative;
-    bottom: 550px;
-}
-
-.show-menu {
-    position: relative;
-    bottom: 0px;
+    display: none;
 }
 
 .nav-links ul, .show-menu ul {
-    position: absolute;
-    top: 84px;
+    margin-bottom: 0;
     width: 100%;
     list-style: none;
-    background: white;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -42,11 +40,16 @@ nav {
     font-weight: 700;
     color: #767676;
     margin-left: 30px;
+    
 }
 
-.nav-hr {
-    position: relative;
-    left: -32px;
+.navbar-large-screen li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 18px;
+    font-weight: 700;
+    color: #767676;
+
 }
 
 .linkLogo {
@@ -68,6 +71,13 @@ nav {
     color: #333;
     margin-right: 3px;
 }
+
+
+
+
+
+
+
 
 
 .title {
@@ -103,6 +113,12 @@ span {
 .video-screen {
     width: 300px;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.video-screen:hover {
+    box-shadow: 0 100px 140px -50px rgba(0,0,0,.25), 0 0 20px 0 rgba(0,0,0,.03);
+    transform: scale3d(1.01,1.01,1.01);
 }
 
 
@@ -115,6 +131,14 @@ span {
     font-size: 18px;
     border-radius: 50px;
 }
+
+
+
+
+
+
+
+
 
 
 .foot-section {
@@ -174,3 +198,34 @@ span {
         padding: 0 122px;
     }
 }
+
+@media (min-width: 1024px) {
+    .desc {
+        padding: 0 200px;
+    }
+
+    .title {
+        padding: 0 200px;
+        font-size: 55px;
+    }
+
+    .video-screen {
+        width: 800px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .desc {
+        padding: 0 450px;
+    }
+    .title {
+        font-size: 60px;
+        padding: 0 500px;
+    }
+    .video-screen {
+        width: 900px;
+        margin-bottom: 20px;
+    }
+}
+

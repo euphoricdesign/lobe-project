@@ -21,7 +21,7 @@ export const Footer = () => {
     }, []);
 
     return (
-        <footer>
+        <footer style={{marginBottom:120}}>
             {
                 isLargeScreen 
                 ? 
