@@ -14,7 +14,7 @@ export const App = () => {
         <h1 className='title' style={{marginTop:'120px'}}>Lobe <span>Tour</span></h1>
         <p className='desc'>Build your first machine learning model in ten minutes. No code or experience required.</p>
 
-        <Video />
+        <Video videoId={'Mdcw3Sb98DA'} />
 
         <h1 className='title' style={{lineHeight:"1em"}}>Train your app with Lobe</h1>
 

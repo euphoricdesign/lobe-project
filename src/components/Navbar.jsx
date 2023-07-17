@@ -43,7 +43,7 @@ export const Navbar = () => {
                   <li>Help</li>
                 </ul>
               </div>
-              <Button width={100} fontSize={15} name={'Download'} marginTop={0} marginBottom={0} marginRight={30} />
+              <Button width={150} fontSize={15} name={'Download'} marginTop={0} marginBottom={0} marginRight={30} />
             </nav>
           :
             <nav className='navbar-expand-lg'>
